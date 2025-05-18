@@ -32,4 +32,5 @@ public class Program {
 					+ String.format("%.2f", aluno.getFrequencia()) + "% | Status: " + aluno.getStatus());
 		}
 	}
+	
 }

@@ -34,7 +34,6 @@ public class Program2 {
 		// Exibindo as informações formatadas
 		System.out.println("\n=== Dados do Aluno Cadastrado ===");
 		novoAluno.exibirInformacoes();
-
 		sc.close();
 	}
 }
