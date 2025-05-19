@@ -105,21 +105,18 @@ public class Aluno {
 	public void exibirInformacoes() {
 		System.out.println("Matrícula: " + matricula);
 		System.out.println("Nome: " + nome);
-		System.out.println("Notas: " 
-				+ String.format("%.2f", nota1) 
-				+ ", " + String.format("%.2f", nota2) 
-				+ ", " + String.format("%.2f", nota3));
+		System.out.println("Notas: " + String.format("%.2f", nota1) + ", " + String.format("%.2f", nota2) + ", "
+				+ String.format("%.2f", nota3));
 		System.out.println("Média: " + String.format("%.2f", media));
 		System.out.println("Frequência: " + frequencia + "%");
 		System.out.println("Status: " + status);
 	}
-	
+
 	@Override
 	public String toString() {
-	    return String.format("Matrícula: %s | Nome: %s "
-	    		+ "| Nota1: %.2f | Nota2: %.2f | Nota3: %.2f "
-	    		+ "| Média: %.2f | Frequência: %.2f%% | Status: %s",
-	            matricula, nome, nota1, nota2, nota3, media, frequencia, status);
+		return String.format(
+				"Matrícula: %s | Nome: %s " + "| Nota1: %.2f | Nota2: %.2f | Nota3: %.2f "
+						+ "| Média: %.2f | Frequência: %.2f%% | Status: %s",
+				matricula, nome, nota1, nota2, nota3, media, frequencia, status);
 	}
-
 }
